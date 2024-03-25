@@ -12,15 +12,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void Dead(){
         uiManager.OnPlayerDead();
-        achivementSystem.UnLockAchivement("뉴턴의 법칙");
+        achivementSystem.UnLockAchivement("Newton's laws of motion");
         gameManager.OnPlayerDead();
-        
+
         Debug.Log("죽었다!");
         Destroy(gameObject);
     }
     void OnTriggerEnter(Collider other){
-        Debug.Log("죽었다!");
-        Destroy(gameObject);
+        Dead();
 
     }
 }

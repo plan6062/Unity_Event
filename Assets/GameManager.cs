@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
 
     public void OnPlayerDead(){
-        Invoke("Restart", 5f);
+        Invoke("Restart", 3f);
     }
     private void Restart(){
         SceneManager.LoadScene(0);

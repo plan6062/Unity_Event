@@ -9,7 +9,7 @@ public class AchivementSystem : MonoBehaviour
     public TextMeshProUGUI achivementText;
 
     public void UnLockAchivement (string title){
-        Debug.Log("도전과제 해제! - " + title);
-        achivementText.text = "도전과제 해제: " + title;
+        Debug.Log("Achivement Unlock! - " + title);
+        achivementText.text = "Achivement Unlock: " + title;
     }   
 }
